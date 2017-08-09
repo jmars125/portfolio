@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JM - Portfolio</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="logo-64x64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="logo-16x16.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
-    <body class="home page">
-        <div id="nav_bar">
-            <a class="logo" rel="index" href="#"> <img src="logo-64x64.png" alt="Web Developer Logo" /></a>
-            <nav class="en">
-                 <a rel="index" href="#" class="home-link active"><i class="fa fa-home"></i></a> 
-                 <a rel="about" href="#" class=""><i class="fa fa-user-secret"></i></a>
-                 <a rel="Portfolio" href="#" class=""><i class="fa fa-code"></i></a> 
-                 <a rel="contact" href="#" class=""><i class="fa fa-envelope-o"></i></a>
-            </nav>
-        </div>
-    </body>
-</html>
+---
+layout: default
+title: Your New Jekyll Site
+---
 
-
-
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
