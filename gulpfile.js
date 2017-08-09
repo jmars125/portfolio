@@ -3,7 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var jade        = require('gulp-jade');
+var pug         = require('gulp-pug');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -56,9 +56,9 @@ gulp.task('sass', function () {
 /*
     Gulp Stuff for Jade
 */
-gulp.task('jade', function(){
-    return gulp.src('_jadeFiles/*.jade')
-    .pipe(jade())
+gulp.task('pug', function(){
+    return gulp.src('_pugFiles/*.pug')
+    .pipe(pug())
     .pipe(gulp.dest('_includes'));
 });
 
@@ -67,9 +67,11 @@ gulp.task('jade', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('assets/css/**.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
-    gulp.watch('_jadeFiles/*.jade', ['jade']);
+    gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/js/**', ['jekyll-rebuild']);
+    gulp.watch(['index.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch(['assets/js/**'], ['jekyll-rebuild']);
+    gulp.watch('_pugFiles/*.pug', ['pug']);
 });
 
 /**
