@@ -83,10 +83,6 @@
 #nav_bar ul li a:hover {
     color: #08fdd8
 }
-
-body{
-/*   background-color: pink; */
-}
 /***********************************************
                 Home Page
 ***********************************************/
@@ -96,13 +92,6 @@ body{
   background-image: URL("https://rawgit.com/jmars125/portfolio/master/assets/img/OIHR970.jpg");
   background-size: 100% 100%;
   color: white;
-  margin: 0;
-  padding 0;
-}
-
-
-.container .hero{
-
 }
 
 h1{
@@ -110,6 +99,7 @@ h1{
   line-height: 80px;
   text-align: center;
   padding-top: 200px;
+  margin-top:0;
 }
 
 .blast {
@@ -124,10 +114,6 @@ h1{
 }
 .home-page .blast:hover {
     color: #31e6ff;
-}
-
-.hero{
-  
 }
 
 /***********************************************
@@ -189,6 +175,18 @@ h1{
   
   .container{
     padding-top: 100px;
+  }
+
+  h1{
+    font-size: 30px;
+    padding-top: 155px;
+    line-height: 30px;
+  }
+
+  .text-zone{
+      height: 50vh;
+      line-height: 10px;
+      text-align: center;
   }
 }
 @media(max-width:750px) {
