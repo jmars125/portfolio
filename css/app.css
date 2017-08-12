@@ -103,14 +103,14 @@ header {
   text-align: center;
   background: #35322f;
   color: white;
+  background-image: URL("https://rawgit.com/jmars125/portfolio/master/img/codeWP.png");
+  background-size: 100% 100%;
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-header img {
-  display: block;
-  margin: 0 auto 20px;
+  padding-left: 10px;
+  height:100vh;
 }
 header .intro-text .name {
   display: block;
