@@ -94,30 +94,9 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active  {
                 Header
 ***********************************************/
 /* Header Text */
-.intro-text{
+ .hero-content{
   font-family: 'Black Ops One', cursive;
   color: white;
-}
-
-header {
-  text-align: center;
-  background: #35322f;
-  color: white;
-  background-image: URL("https://rawgit.com/jmars125/portfolio/master/img/codeWP.png");
-  background-size: 100% 100%;
-}
-header .container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 10px;
-  height:100vh;
-}
-header .intro-text .name {
-  display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2em;
 }
 
 .blast {
@@ -133,6 +112,100 @@ header .intro-text .name {
 .home-page .blast:hover {
     color: #31e6ff;
 }
+
+#fullscreen-hero {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background-color: #2A3A3F;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.home-hero {
+    background-image: url(/img/coding-bg.jpg)
+    /* background-image: url("https://unsplash.com/collections/347317/tech?photo=23P9znGSiUs") */
+}
+
+/* applies dark gradient to unbrighten image */
+.home-hero:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(90deg, rgba(49, 61, 65, 0.6), rgba(49, 61, 65, 0.6))
+}
+
+.hero-container {
+    display: table;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%
+}
+@media screen and (min-width: 550px) {
+    .hero-container {
+        padding: 0 40px
+    }
+}
+.hero-content {
+    display: table-cell;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle
+}
+.hero-content h1 {
+    font-size: 2.3rem;
+    color: #fff;
+    margin-bottom: 0rem
+}
+@media screen and (min-width: 750px) {
+    .hero-content h1 {
+        font-size: 3.4rem
+    }
+}
+@media screen and (min-width: 1000px) {
+    .hero-content h1 {
+        font-size: 5.7rem
+    }
+}
+
+
+.learn-more {
+    bottom: 2.5%;
+    display: inline-block;
+    font-size: 1.3rem;
+    left: 50%;
+    padding: 20px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+@media screen and (min-width: 750px) {
+    .learn-more {
+        font-size: 1.7rem
+    }
+}
+.learn-more a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    border-bottom: none
+}
+.learn-more a:hover {
+    color: rgba(255, 255, 255, 0.9)
+}
+
 
 /***********************************************
                 About Me
