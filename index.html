@@ -5,25 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jon Marshall - Portfolio</title>
-    <link rel="icon" type="image/png" sizes="64x64" href="https://imgur.com/Cfh2mi9">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://imgur.com/xZyi3Sy">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://imgur.com/COZHtjc">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/logo-64x64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo-16x16.png">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body class="home-page">  
-    <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+  <body class="home-page">    
     <!--  Navigation  -->
     <section>
       <div id="nav_bar">
         <div class="logo" rel="index"><img src="https://rawgit.com/jmars125/portfolio/master/img/Logo.svg" alt="Web Developer Logo"></div>
-          <nav class="en">
-            <a rel="index"     href="#" class="home-link active"><i class="fa fa-home"></i></a> 
-            <a rel="about"     href="#" class=""><i class="fa fa-user-secret"></i></a>
-            <a rel="skills"    href="#" class=""><i class="fa fa-code"></i></a>
-            <a rel="Portfolio" href="#" class=""><i class="fa fa-codepen"></i></a> 
-            <a rel="contact"   href="#" class=""><i class="fa fa-envelope-o"></i></a>
+          <nav class="navbar-fixed-top">
+              <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a rel="index"     href="#" class="home-page-link home-link active"><i class="fa fa-home"></i></a> 
+                    </li>
+                    <li class="page-scroll">
+                        <a rel="about"     href="#about" class="about-me-link"><i class="fa fa-user-secret"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a rel="skills"    href="#" class="skills-link"><i class="fa fa-code"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a rel="Portfolio" href="#" class="portfolio-link"><i class="fa fa-codepen"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                      <a rel="contact"     href="#" class="contact-link"><i class="fa fa-envelope-o"></i></a>
+                    </li>
+                </ul>
          </nav>
       </div>
     </section>  
@@ -85,10 +97,33 @@
     </header>
     
   
-  <!--   About Me   -->
-          <div class = "container about-me">
-            <h1><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi at eaque pariatur doloribus repellendus fuga soluta architecto mollitia. Eius et quia possimus, sed hic nihil velit magnam sint consequatur!</div></h1>
-          </div>
+<!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+                <div class="col-lg-4">
+                   <img class="img-responsive" src="https://rawgit.com/jmars125/portfolio/master/img/Me.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
       
   <!--   Skills   -->
           <div class ="container skills">
@@ -102,7 +137,16 @@
           <div class ="container contact">
              <h1><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nobis, explicabo maxime ratione voluptates excepturi sint? Saepe nam nostrum eaque fuga quasi? Sequi, eos? Sit totam ratione quam accusamus. Consequuntur.</div></h1>
           </div>
-      </div>
-  </body>
   
+  
+    <!--   jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+      
+    <!--   jquery ease-in plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      
+    <!--   js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <script src="js/app.js"></script>
+  </body>
 </html>
