@@ -319,3 +319,19 @@ section.success {
     font-size: 4.75em;
   }
 }
+
+@media(max-width: 508px){
+    #nav_bar nav a{
+        padding: 10px;
+    }
+
+    #nav_bar nav ul{
+        text-align: center;
+    }
+}
+
+@media (max-width: 470px){
+    #nav_bar nav a {
+        padding: 5px;
+    }
+}
