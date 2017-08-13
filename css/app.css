@@ -19,8 +19,16 @@
 }
 
 ul.nav a:hover, ul.nav a:focus, ul.nav a:active  { 
-  color: #31e6ff !important; 
   background-color:#282726;
+}
+
+ul.nav a:hover{
+    color:#31e6ff !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color:#31e6ff !important;
+    background-color: #282726;
 }
 
 #nav_bar {
@@ -57,10 +65,10 @@ ul.nav a:hover, ul.nav a:focus, ul.nav a:active  {
 #nav_bar nav a:hover i {
     opacity: 0;
 }
-#nav_bar nav a.active,
+/* #nav_bar nav a.active,
 #nav_bar nav a:hover {
     color: #31e6ff;
-}
+} */
 #nav_bar nav a:after {
     font-size: 10px;
     position: absolute;
