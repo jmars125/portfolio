@@ -65,10 +65,7 @@ ul.nav a:hover{
 #nav_bar nav a:hover i {
     opacity: 0;
 }
-/* #nav_bar nav a.active,
-#nav_bar nav a:hover {
-    color: #31e6ff;
-} */
+
 #nav_bar nav a:after {
     font-size: 10px;
     position: absolute;
@@ -220,7 +217,7 @@ ul.nav a:hover{
 ***********************************************/
 .sectionAboutMe {
     padding: 100px 0;
-    background-color:#E7ECEF;
+    background-color:#fff;
 }
 
 .sectionAboutMe img{
@@ -290,88 +287,6 @@ hr.hrStyle:after {
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
-
-.space {
-    width: 100%;
-    clear: both;
-}
-
-.popUpLeft {
-    width: 57%;
-    float: left;
-    margin-right: 5%;
-}
-.popUpLeft img {
-    width: 100%;
-}
-
-.popUpRight {
-    width: 38%;
-    float: right;
-}
-
-.popUpRight a:link,
-.popUpFull a:link {
-    color: #ffffff;
-    text-decoration: none;
-}
-.popUpRight a:visited,
-.popUpFull a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-.popUpRight a:hover,
-.popUpFull a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-.popUpRight a:active,
-.popUpFull a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.popUpFull img {
-    width: 100%;
-    max-width: 850px;
-    text-align: center;
-}
-.popUpTitle {
-    color: #d76713;
-    font-size: 32px;
-    line-height: 35px;
-    margin-bottom: 10px;
-}
-.popUpBtn {
-    background-color: #bdcbb6;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 10px 5% 10px 5%;
-    width: 90%;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.popUpBtn:hover {
-    background-color: #778472;
-    cursor: pointer;
-}
-
-.popUpService {
-    font-size: 13px;
-    font-style: italic;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0px;
-    padding: 4px;
-    background-color: #EEEFE5;
-    margin-bottom: 10px;
-    text-align: center;
-}
 /***********************************************
                 Footer
 ***********************************************/
