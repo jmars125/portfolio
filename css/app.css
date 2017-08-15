@@ -218,38 +218,177 @@ ul.nav a:hover{
 /***********************************************
                 About Me
 ***********************************************/
-
-#about{
-  padding: 100px 0;
-  margin: 0;
-}
- #about h2 {
-  margin: 0;
-  font-size: 5em;
-}
-section.success {
-  background: #18BC9C;
-  color: white;
-  padding-left:100px;
+.sectionAboutMe {
+    padding: 100px 0;
+    background-color:#E7ECEF;
 }
 
+.sectionAboutMe img{
+  display: block;
+  margin: auto;
+}
+
+hr.hrStyle {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+  border-color: #31e6ff;
+}
+hr.hrStyle:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+/***********************************************
+                Skills
+***********************************************/
+.sectionSkills {
+    padding: 100px 0;
+    background-color:#fff;
+}
+/***********************************************
+                Portfolio
+***********************************************/
+.projectInfo {
+    font-size: 11px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 2px 50px 0px 50px;
+    line-height: 15px;
+    color: #31e6ff
+}
+
+.projectBox {
+    width: 25%;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #292E37;
+    padding: 55px 0px 25px 0px;
+    height: 220px;
+    font-family: 'monsteratt', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.projectBox img {
+    width: 60%;
+    max-width: 210px;
+    margin-bottom: 10px;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.space {
+    width: 100%;
+    clear: both;
+}
+
+.popUpLeft {
+    width: 57%;
+    float: left;
+    margin-right: 5%;
+}
+.popUpLeft img {
+    width: 100%;
+}
+
+.popUpRight {
+    width: 38%;
+    float: right;
+}
+
+.popUpRight a:link,
+.popUpFull a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.popUpRight a:visited,
+.popUpFull a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+.popUpRight a:hover,
+.popUpFull a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+.popUpRight a:active,
+.popUpFull a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.popUpFull img {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+.popUpTitle {
+    color: #d76713;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.popUpBtn {
+    background-color: #bdcbb6;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 5% 10px 5%;
+    width: 90%;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.popUpBtn:hover {
+    background-color: #778472;
+    cursor: pointer;
+}
+
+.popUpService {
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 4px;
+    background-color: #EEEFE5;
+    margin-bottom: 10px;
+    text-align: center;
+}
 /***********************************************
                 Footer
 ***********************************************/
 
 .top-bar, .bottom-bar {
-    padding: 20px;
-  }
-  .vertical-container {
-    align-items:center;
-    display: flex;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .fb-link{
-      color: #004953;
-  }
+  padding: 20px;
+}
+.vertical-container {
+  align-items:center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.fb-link{
+    color: #004953;
+}
 
 /***********************************************
                 Screen Transitions
@@ -323,6 +462,10 @@ section.success {
       line-height: 10px;
       text-align: center;
   }
+  
+  .colorGame {
+        width: 33.3333%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -336,6 +479,17 @@ section.success {
   header .intro-text .name {
     font-size: 4.75em;
   }
+  
+  .sectionAboutMe {
+    padding: 65px 0;
+  }
+  
+  .colorGame {
+        width: 50%;
+    }
+  .colorGame img {
+        width: 70%;
+    }
 }
 
 @media(max-width: 508px){
@@ -345,6 +499,10 @@ section.success {
 
     #nav_bar nav ul{
         text-align: center;
+    }
+  
+  .colorGame {
+        width: 100%;
     }
 }
 
