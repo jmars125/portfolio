@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.39"
-     inkscape:cx="17.189397"
-     inkscape:cy="48.841113"
+     inkscape:cx="74.703152"
+     inkscape:cy="49.065425"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,49 +60,30 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-17.744908,-162.39963)">
-    <g
-       id="g21">
-      <text
-         transform="scale(0.93541756,1.0690413)"
-         id="text12"
-         y="209.86626"
-         x="16.719337"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.64302826px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:2.21607542"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.64302826px;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff2a2a;stroke-width:2.21607542"
-           y="209.86626"
-           x="16.719337"
-           id="tspan10"
-           sodipodi:role="line">J</tspan></text>
-      <text
-         transform="scale(1.0839627,0.92254096)"
-         id="text26"
-         y="277.95087"
-         x="21.537241"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:1.22178221"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;stroke-width:1.22178221"
-           y="277.95087"
-           x="21.537241"
-           id="tspan24"
-           sodipodi:role="line">&lt;/&gt;</tspan><tspan
-           id="tspan28"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;stroke-width:1.22178221"
-           y="339.04065"
-           x="21.537241"
-           sodipodi:role="line" /></text>
-      <text
-         transform="scale(0.83488294,1.1977727)"
-         id="text32"
-         y="186.43329"
-         x="75.964722"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.47622681px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2ad4ff;fill-opacity:1;stroke:none;stroke-width:1.96190572"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.47622681px;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2ad4ff;stroke-width:1.96190572"
-           y="186.43329"
-           x="75.964722"
-           id="tspan30"
-           sodipodi:role="line">M</tspan></text>
-    </g>
+    <path
+       d="m 24.263384,162.95405 h 42.59277 v 49.13982 L 56.126986,224.3557 H 48.960712 V 176.32637 H 24.263384 Z m 12.065252,49.13982 h 9.797956 V 224.3557 H 28.514563 L 17.744908,212.09387 v -13.46486 h 18.583728 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:88.64302826px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:2.21607542"
+       id="path190"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 28.156794,244.88532 v -5.17348 l 27.599893,-6.42831 v 5.48168 z m 1.396808,1.27686 11.691801,-2.55372 14.511284,3.25819 v 5.45966 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:1.22178221"
+       id="path193"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 74.35493,225.2041 h 6.466704 l -15.856359,35.53185 h -6.440837 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:1.22178221"
+       id="path195"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 112.32741,240.72453 v 5.17347 l -27.599888,6.42831 v -5.48167 z m -1.3968,-1.27687 -11.691804,2.55372 -14.511284,-3.25819 v -5.45966 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48.87182999px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:1.22178221"
+       id="path197"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 67.19664,162.39963 h 15.035975 l 11.388954,27.07912 8.957601,-22.03047 v 30.65907 l -10.205267,25.19736 z m 37.46197,60.90508 v -60.90508 h 14.14021 v 60.90508 z m -37.493961,0 v -55.25978 l 13.212463,31.8065 v 23.45328 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:78.47622681px;line-height:1.25;font-family:'Black Ops One';-inkscape-font-specification:'Black Ops One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2ad4ff;fill-opacity:1;stroke:none;stroke-width:1.96190572"
+       id="path200"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
