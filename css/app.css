@@ -339,8 +339,8 @@ hr.hrStyle:after {
                 Contact Me
 ***********************************************/
 .sectionContact{
-    /* height: 80vh; */
-    padding: 0 0 300px 0;
+/*     height: 80vh; */
+    padding: 0 0 100px 0;
 }
 
 #map{
@@ -355,18 +355,18 @@ hr.hrStyle:after {
 }
 
 .pH1{
-    font-family: 'monsteratt', cursive;
+    font-family: 'lato', cursive;
     font-size: 25px;
 }
 
 .emailBtn {
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px 25px 0;
     background-color: #55acee;
     height: auto;
     font-size: 40px;
     line-height: 40px;
-    font-family: 'lato';
     text-align: center;
+    font-family: 'lato';
     color: #fff;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -427,7 +427,9 @@ hr.hrStyle:after {
 }
 
 @media(max-width:960px) {
-  
+    .home-hero{
+        width:100%;
+    }
     .wrap{
     position: absolute;
     left:0px;
@@ -498,6 +500,9 @@ hr.hrStyle:after {
 }
 
 @media (max-width: 768px) {
+    .home-hero{
+        width:50%;
+    }
   #nav_bar nav a {
         margin-left: 10%
     }
