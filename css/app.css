@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
-
+/***********************************************
+                     Global
+***********************************************/
 *{
   margin: auto;
 }
@@ -16,10 +18,6 @@
 div .container{
     padding: 0;
 }
-
-
-
-
 /***********************************************
                 Navigation Bar
 ***********************************************/
@@ -168,14 +166,9 @@ ul.nav a:hover{
 .hero-container {
     display: table;
     margin: 0 auto;
-/*     padding: 0 20px; */
     height: 100%
 }
-@media screen and (min-width: 550px) {
-    .hero-container {
-/*         padding: 0 40px */
-    }
-}
+
 .hero-content {
     display: table-cell;
     position: relative;
@@ -188,17 +181,6 @@ ul.nav a:hover{
     color: #fff;
     margin-bottom: 0rem
 }
-@media screen and (min-width: 750px) {
-    .hero-content h1 {
-        font-size: 3.4rem
-    }
-}
-@media screen and (min-width: 1000px) {
-    .hero-content h1 {
-        font-size: 5.7rem
-    }
-}
-
 
 .learn-more {
     bottom: 2.5%;
@@ -214,11 +196,7 @@ ul.nav a:hover{
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
 }
-@media screen and (min-width: 750px) {
-    .learn-more {
-        font-size: 1.7rem
-    }
-}
+
 .learn-more a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
@@ -227,8 +205,6 @@ ul.nav a:hover{
 .learn-more a:hover {
     color: rgba(255, 255, 255, 0.9)
 }
-
-
 /***********************************************
                 About Me
 ***********************************************/
@@ -248,7 +224,6 @@ hr.hrStyle:after {
 	display: inline-block;
 	position: relative;
 	top: -14px;
-/* 	padding: 0 10px; */
 	background: #f0f0f0;
 	color: #8c8b8b;
 	font-size: 18px;
@@ -256,7 +231,6 @@ hr.hrStyle:after {
 	-moz-transform: rotate(60deg);
 	transform: rotate(60deg);
 }
-
 /***********************************************
                 Skills
 ***********************************************/
@@ -264,13 +238,16 @@ hr.hrStyle:after {
     padding: 0 0 300px 0;
     background-color:#fff;
 }
+
+.svgSize{
+    width: 100px;
+}
 /***********************************************
                 Portfolio
 ***********************************************/
 .sectionPortfolio{
   padding: 0 0 300px 0;
 }
-
 
 .projectInfo {
     font-size: 11px;
@@ -305,8 +282,6 @@ hr.hrStyle:after {
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
-
-
 /***********************************************
              Modal's for Portfolio
 ***********************************************/
@@ -361,6 +336,55 @@ hr.hrStyle:after {
     cursor: pointer;
 }
 /***********************************************
+                Contact Me
+***********************************************/
+.sectionContact{
+    height: 80vh;
+    padding: 0 0 300px 0;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.contactH1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 48px;
+}
+
+.pH1{
+    font-family: 'monsteratt', cursive;
+    font-size: 25px;
+}
+
+.emailBtn {
+    padding: 25px 0px 25px 0px;
+    background-color: #55acee;
+    height: auto;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'lato';
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    width: 90%;
+    margin: 0px 5% 0px 5%;
+}
+.emailBtn:hover {
+    background-color: #1b95e0;
+    cursor: pointer;
+}
+.emailBtnBkg {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 460px;
+}
+
+/***********************************************
                 Footer
 ***********************************************/
 
@@ -382,20 +406,25 @@ hr.hrStyle:after {
   color: #31e6ff;
 }
 
-.fb-link{
-    color: #004953;
-}
-
 /***********************************************
                 Screen Transitions
 ***********************************************/
-/* @media(max-width:1300px){
-    .sectionAboutMe img{
-        display: block;
-        margin: auto;
-        padding-right:20px;
-      }
-} */
+@media screen and (min-width: 750px) {
+    .hero-content h1 {
+        font-size: 3.4rem
+    }
+}
+@media screen and (min-width: 1000px) {
+    .hero-content h1 {
+        font-size: 5.7rem
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .learn-more {
+        font-size: 1.7rem
+    }
+}
 
 @media(max-width:960px) {
   
