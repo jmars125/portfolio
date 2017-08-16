@@ -524,6 +524,10 @@ hr.hrStyle:after {
         text-align: center;
     }
 
+    .emailBtnBkg{
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 470px){
