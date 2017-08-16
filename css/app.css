@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
 
+*{
+  margin: auto;
+}
+
+.wrap{
+  position: absolute;
+  left: 80px;
+  width: 94.5%;
+  height: 100%;
+}
+
+div .container{
+    padding: 0;
+}
+
+
+
+
 /***********************************************
                 Navigation Bar
 ***********************************************/
@@ -132,7 +150,6 @@ ul.nav a:hover{
 
 .home-hero {
     background-image: url(https://rawgit.com/jmars125/portfolio/master/img/coding-bg.jpg)
-    /* background-image: url("https://unsplash.com/collections/347317/tech?photo=23P9znGSiUs") */
 }
 
 /* applies dark gradient to unbrighten image */
@@ -151,12 +168,12 @@ ul.nav a:hover{
 .hero-container {
     display: table;
     margin: 0 auto;
-    padding: 0 20px;
+/*     padding: 0 20px; */
     height: 100%
 }
 @media screen and (min-width: 550px) {
     .hero-container {
-        padding: 0 40px
+/*         padding: 0 40px */
     }
 }
 .hero-content {
@@ -217,25 +234,21 @@ ul.nav a:hover{
 ***********************************************/
 .sectionAboutMe {
     padding: 100px 0;
+    margin: auto;
     background-color:#fff;
-}
-
-.sectionAboutMe img{
-  display: block;
-  margin: auto;
 }
 
 hr.hrStyle {
 	border-top: 1px solid #8c8b8b;
 	text-align: center;
-  border-color: #31e6ff;
+    border-color: #31e6ff;
 }
 hr.hrStyle:after {
 	content: '§';
 	display: inline-block;
 	position: relative;
 	top: -14px;
-	padding: 0 10px;
+/* 	padding: 0 10px; */
 	background: #f0f0f0;
 	color: #8c8b8b;
 	font-size: 18px;
@@ -248,12 +261,17 @@ hr.hrStyle:after {
                 Skills
 ***********************************************/
 .sectionSkills {
-    padding: 100px 0;
+    padding: 0 0 300px 0;
     background-color:#fff;
 }
 /***********************************************
                 Portfolio
 ***********************************************/
+.sectionPortfolio{
+  padding: 0 0 300px 0;
+}
+
+
 .projectInfo {
     font-size: 11px;
     font-style: italic;
@@ -266,7 +284,6 @@ hr.hrStyle:after {
 }
 
 .projectBox {
-    width: 25%;
     float: left;
     background-color: #fff;
     text-align: center;
@@ -278,15 +295,70 @@ hr.hrStyle:after {
     font-size: 13px;
     font-weight: 700;
     line-height: 16px;
+    width: 100%;
 }
 .projectBox img {
-    width: 60%;
+    width: 100%;
     max-width: 210px;
     margin-bottom: 10px;
 }
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
+
+
+/***********************************************
+             Modal's for Portfolio
+***********************************************/
+.modal-dialog{
+    position: relative;
+    display: table;
+    overflow-y: auto;    
+    overflow-x: auto;
+    width: auto;
+    min-width: 300px;   
+}
+
+.projectModalTitle {
+    color: #292E37;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.projectModalService {
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 4px;
+    background-color: #c1e4ff;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 35%;
+}
+
+.projectModalClose{
+  text-align:right;
+}
+
+.projectModalButton {
+    background-color: #55acee;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 5% 10px 5%;
+    width: 35%;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.projectModalButton:hover {
+    background-color: #1b95e0;
+    cursor: pointer;
+}
 /***********************************************
                 Footer
 ***********************************************/
@@ -297,8 +369,16 @@ hr.hrStyle:after {
 .vertical-container {
   align-items:center;
   display: flex;
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+  background: #292E37;
+  color: #fff;
+}
+
+.button-box{
+  background-color: #282726;
+}
+
+.button-box:hover{
+  color: #31e6ff;
 }
 
 .fb-link{
@@ -308,14 +388,22 @@ hr.hrStyle:after {
 /***********************************************
                 Screen Transitions
 ***********************************************/
-@media(max-width:1330px){
-  .container{
-    padding-left: 100px;
-  }
-}
-
+/* @media(max-width:1300px){
+    .sectionAboutMe img{
+        display: block;
+        margin: auto;
+        padding-right:20px;
+      }
+} */
 
 @media(max-width:960px) {
+  
+    .wrap{
+    position: absolute;
+    left:0px;
+      width: 100%;
+    }
+
     #nav_bar {
         width: 100%;
         height: 80px;
@@ -377,10 +465,6 @@ hr.hrStyle:after {
       line-height: 10px;
       text-align: center;
   }
-  
-  .colorGame {
-        width: 33.3333%;
-    }
 }
 
 @media (max-width: 768px) {
@@ -394,17 +478,6 @@ hr.hrStyle:after {
   header .intro-text .name {
     font-size: 4.75em;
   }
-  
-  .sectionAboutMe {
-    padding: 65px 0;
-  }
-  
-  .colorGame {
-        width: 50%;
-    }
-  .colorGame img {
-        width: 70%;
-    }
 }
 
 @media(max-width: 508px){
@@ -415,10 +488,7 @@ hr.hrStyle:after {
     #nav_bar nav ul{
         text-align: center;
     }
-  
-  .colorGame {
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 470px){

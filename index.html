@@ -15,7 +15,7 @@
 </head>
 <body class="home-page">   
   <!--  Navigation  -->
-  <section>
+  <section class="sectionNav">
     <div id="nav_bar">
       <div class="logo" rel="index"><img src="https://rawgit.com/jmars125/portfolio/master/img/Logo.svg" alt="Web Developer Logo"></div>
         <nav class="navbar-fixed-top">
@@ -40,11 +40,12 @@
     </div>
   </section>  
 
+<div class="wrap">
   <!-- Header -->
   <header>
     <div id="fullscreen-hero" class="home-hero">
     <div class="hero-container">
-      <div class="hero-content"><a href="#" class="home-logo"><img src="img/logo-32x32.png.svg"></a>
+      <div class="hero-content"><a href="#" class="home-logo"></a>
         <h1 aria-label=" Hey there, I’m Jon, an aspiring Web-Developer." class="blast-root"> 
             <span class="blast" aria-hidden="true" style="opacity: 1;">H</span>
             <span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
@@ -102,7 +103,7 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-6 aboutImg">
-                  <img src="https://rawgit.com/jmars125/portfolio/master/img/Me.png" alt="">
+                  <img src="https://rawgit.com/jmars125/portfolio/master/img/Me.png" class ="center-block" alt="">
               </div>
               <div class="col-lg-6 text-center">
                   <h1>Hi, I'm Jon Marshall</h1>
@@ -113,7 +114,7 @@
   </section>
     
   <!-- skills section -->
-  <section  class="sectionSkills" id="skills">
+  <section  class="sectionSkills text-center" id="skills">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -141,12 +142,13 @@
   <section class="sectionPortfolio" id="portfolio">
         <div class="container">
           <div class="row">
-            <div>
+            <div class="col-lg-12">
               <h1 class="text-center">My Portfolio</h1>
               <hr class="hrStyle">
             </div>
 
-            <a class='inline' href="#" data-toggle="modal" 
+            <div class="col-lg-4 col-sm-12">
+              <a class='inline' href="#" data-toggle="modal" 
                data-target="#colorGameModal">
               <div class="projectBox">
                   <img class="img-rounded grow" src="https://rawgit.com/jmars125/portfolio/master/img/colorGame.png" alt="Color Game"/><br>
@@ -154,8 +156,11 @@
                     <div class="projectInfo">Web Design / Responsive Development</div>
               </div>
             </a>
+            </div>
             
-            <a class='inline' href="#" data-toggle="modal" 
+            
+            <div class="col-lg-4 col-sm-12">
+              <a class='inline' href="#" data-toggle="modal" 
                data-target="#tributeModal">
               <div class="projectBox">
                   <img class="img-rounded grow" src="https://rawgit.com/jmars125/portfolio/master/img/tributePage.png" alt="Tribute Page"/><br>
@@ -163,14 +168,19 @@
                     <div class="projectInfo">Web Design / Responsive Development</div>
               </div>
             </a>
-            <a class='inline' href="#" data-toggle="modal" 
+            </div>
+            
+            <div class="col-lg-4 col-sm-12">
+              <a class='inline' href="#" data-toggle="modal" 
                data-target="#imageGalleryModal">
               <div class="projectBox">
                   <img class="img-rounded grow" src="https://rawgit.com/jmars125/portfolio/master/img/imageGallery.png" alt="Image Gallery"/><br>
                     Image Gallery<br>
                     <div class="projectInfo">Web Design / Responsive Development</div>
-              </div>
-            </a>
+                </div>
+              </a>
+            </div>
+            
           </div>
         </div>        
     </section>    
@@ -202,40 +212,54 @@
       </div>
     </div>
   </footer>
+</div>
+  
 
   <!-- Projects -->
   <div class="modal" id="colorGameModal">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" type="button" data-dismiss="modal">x</button>
-          <h2 class="modal-title">Color Game</h2>
-        </div>
         <div class="modal-body">
-          <!-- carousel -->
-          <div class="carousel slide" id="colorGameImages" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-1.png" alt="">
-              </div>
-              <div class="item">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-2.png" alt="">
-              </div>
-              <div class="item">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-3.png" alt="">
-              </div>
-            </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- carousel -->
+                <div class="carousel slide" id="colorGameImages" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-1.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-2.png" alt="">
+                    </div>
+                    <div class="item">
+                      <img src="https://rawgit.com/jmars125/portfolio/master/img/colorGame-3.png" alt="">
+                    </div>
+                  </div>
             
-            <!-- carousel controls -->
-            <a class="left carousel-control" href="#colorGameImages" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#colorGameImages" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
-          </div>
-          <div>
-            <a href="https://codepen.io/jmars125/full/wqgxOJ/">Color Game</a>
+                  <!-- carousel controls -->
+                  <a class="left carousel-control" href="#colorGameImages" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#colorGameImages" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="projectModalTitle">Color Game</div>
+                <div class="projectModalService">Web Design</div>
+                <div class="projectModalService">Development</div>
+                <div class="projectModalDescription">
+                  The color game was a project for Colt Steel's web dev boot camp. Your goal was to 
+                  make a responsive color game with an easy and hard mode. When you win the game you
+                  see all the tiles change to the same color.
+                      <br><br>
+                </div>
+                <a href="https://codepen.io/jmars125/full/wqgxOJ/" target="_blank"><div class="projectModalButton">LAUNCH WEBSITE</div></a>
+              </div>
+              <button class="close projectModalClose" type="button" data-dismiss="modal">x</button>
+            </div>
           </div>
         </div>
       </div>
@@ -245,53 +269,64 @@
   <div class="modal" id="tributeModal">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" type="button" data-dismiss="modal">x</button>
-          <h2 class="modal-title">Tribute Page</h2>
-        </div>
         <div class="modal-body">
-          <!-- carousel -->
-          <div class="carousel slide" id="tributeImages" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-1.png" alt="">
-              </div>
-              <div class="item">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-2.png" alt="">
-              </div>
-              <div class="item">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-3.png" alt="">
-              </div>
-              <div class="item">
-                <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-4.png" alt="">
-              </div>
-            </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- carousel -->
+                <div class="carousel slide" id="tributeImages" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-1.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-2.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-3.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="https://rawgit.com/jmars125/portfolio/master/img/tributePage-4.png" alt="">
+                  </div>
+                </div>
             
-            <!-- carousel controls -->
-            <a class="left carousel-control" href="#tributeImages" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#tributeImages" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+                <!-- carousel controls -->
+                <a class="left carousel-control" href="#tributeImages" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#tributeImages" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="projectModalTitle">Tribute Page</div>
+                <div class="projectModalService">Web Design</div>
+                <div class="projectModalService">Development</div>
+                <div class="projectModalDescription">
+                  The tribute page was a project for Free Code Camp. Your goal was to 
+                  make a responsive website with an image and text. As well as a link
+                  to an external resource with more information on the tribute.
+                      <br><br>
+                </div>
+                <a href="https://codepen.io/jmars125/full/LjxwqR/" target="_blank"><div class="projectModalButton">LAUNCH WEBSITE</div></a>
+              </div>
+              <button class="close projectModalClose" type="button" data-dismiss="modal">x</button>
+            </div>
           </div>
-          <div>
-            <a href="https://codepen.io/jmars125/full/LjxwqR/">Tribute Page</a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
+</div>
 
   <div class="modal" id="imageGalleryModal">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" type="button" data-dismiss="modal">x</button>
-          <h2 class="modal-title">Image Gallery</h2>
-        </div>
         <div class="modal-body">
-          <!-- carousel -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- carousel -->
           <div class="carousel slide" id="imageGalleryImages" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
               <div class="item active">
@@ -316,8 +351,20 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
           </div>
-          <div>
-            <a href="https://codepen.io/jmars125/full/LjxwqR/">Tribute Page</a>
+              </div>
+              <div class="col-lg-6">
+                <div class="projectModalTitle">Image Gallery</div>
+                <div class="projectModalService">Web Design</div>
+                <div class="projectModalService">Development</div>
+                <div class="projectModalDescription">
+                  The image Gallery page was a project for Colt Steele's Web Dev Boot Camp. Your goal was to 
+                  make a responsive website with a few images that dynamically resize based on the width of the page.
+                      <br><br>
+                </div>
+                <a href="https://codepen.io/jmars125/full/LjxwqR/" target="_blank"><div class="projectModalButton">LAUNCH WEBSITE</div></a>
+              </div>
+              <button class="close projectModalClose" type="button" data-dismiss="modal">x</button>
+            </div>
           </div>
         </div>
       </div>
