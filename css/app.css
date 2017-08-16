@@ -333,9 +333,9 @@ hr.hrStyle:after {
     letter-spacing: 0px;
     padding: 4px;
     background-color: #c1e4ff;
-    margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
     width: 35%;
+    margin: 0 0 10px 0;
 }
 
 .projectModalClose{
@@ -345,7 +345,7 @@ hr.hrStyle:after {
 .projectModalButton {
     background-color: #55acee;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -354,6 +354,7 @@ hr.hrStyle:after {
     width: 35%;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    margin: 0 0 10px 0;
 }
 .projectModalButton:hover {
     background-color: #1b95e0;
