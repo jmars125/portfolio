@@ -424,6 +424,9 @@ hr.hrStyle:after {
     .learn-more {
         font-size: 1.7rem
     }
+    .emailBtnBkg{
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:960px) {
@@ -497,6 +500,9 @@ hr.hrStyle:after {
       line-height: 10px;
       text-align: center;
   }
+  .emailBtnBkg{
+    margin-bottom: 20px;
+}
 }
 
 @media (max-width: 768px) {
@@ -513,6 +519,9 @@ hr.hrStyle:after {
   header .intro-text .name {
     font-size: 4.75em;
   }
+  .emailBtnBkg{
+    margin-bottom: 20px;
+}
 }
 
 @media(max-width: 508px){
