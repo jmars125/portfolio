@@ -339,7 +339,7 @@ hr.hrStyle:after {
                 Contact Me
 ***********************************************/
 .sectionContact{
-    height: 80vh;
+    /* height: 80vh; */
     padding: 0 0 300px 0;
 }
 
