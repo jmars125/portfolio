@@ -448,6 +448,10 @@ hr.hrStyle:after {
         z-index: 3;
         min-height: 0
     }
+
+    .hero-content{
+        z-index: 2;
+    }
   
   .logo img{
     width:70px;
